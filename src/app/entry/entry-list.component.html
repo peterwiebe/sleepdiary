@@ -1,0 +1,12 @@
+<h2>Entry List</h2>
+
+<ul>
+  <li *ngFor="#entry of entrys">
+    <a
+      [routerLink]="['EntryDetail', { id: entry.id }]">
+      <strong>{{entry.id}}</strong>
+      -
+      {{entry.name}}
+    </a>
+  </li>
+</ul>
