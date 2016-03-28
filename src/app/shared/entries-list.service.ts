@@ -11,11 +11,11 @@ export class EntryService{
     return ENTRIES[index];
   }
 
-  getRecipeIndex(item: Recipe) {
+  getRecipeIndex(item: Entry) {
     return ENTRIES.indexOf(item);
   }
 
-  insertRecipe(item: Recipe) {
+  insertRecipe(item: Entry) {
     ENTRIES.push(item);
   }
 
@@ -23,7 +23,7 @@ export class EntryService{
     ENTRIES.splice(index, 1);
   }
 
-  updateRecipe(index: number, item: Recipe) {
+  updateRecipe(index: number, item: Entry) {
     ENTRIES[index] = item;
   }
 }
