@@ -1,7 +1,8 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
-
+import {EntryRoot} from './entry/entry-root.component';
 import {EntryListComponent} from './entry/entry-list.component';
+import {EntryFormComponent} from './entry/entry-form.component';
 
 
 @Component({
@@ -13,12 +14,7 @@ import {EntryListComponent} from './entry/entry-list.component';
   pipes: []
 })
 @RouteConfig([
- { path: '/', name: 'Entries', component: EntryListComponent, useAsDefault: true }
+ { path: '/...', name: 'EntryList', component: EntryListComponent, useAsDefault: true },
+ { path: '/entry/new', name: 'EntryForm', component: EntryFormComponent }
 ])
-export class SleepdiaryApp {
-  defaultMeaning: number = 42;
-
-  meaningOfLife(meaning?: number) {
-    return `The meaning of life is ${meaning || this.defaultMeaning}`;
-  }
-}
+export class SleepdiaryApp { }

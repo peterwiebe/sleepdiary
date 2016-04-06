@@ -1,0 +1,48 @@
+<h3>New Entry</h3>
+<form #entryForm="ngForm" (ngSubmit)="onSubmit(entryForm.value)" >
+
+  <div>
+    <label for="date">date to bed:</label>
+    <input type="text" ngControl="dateToBed" required>
+  </div>
+
+  <div>
+    <label for="bedtime">time to bed:</label>
+    <input type="text" ngControl="bedtime">
+  </div>
+
+  <div>
+    <label for="awaketime">time awake:</label>
+    <input type="text" ngControl="awaketime" >
+  </div>
+
+  <div>
+    <label for="fallAsleep">last night I fell asleep:</label> <br>
+    <input type="radio" name="fallAsleep" value="easily" #FAEasily (click)="fallAsleep(FAEasily.value)"> easily <br>
+    <input type="radio" name="fallAsleep" value="moderately" #FAModerately (click)="fallAsleep(FAModerately.value)"> after some time <br>
+    <input type="radio" name="fallAsleep" value="difficultly" #FADifficultly (click)="fallAsleep(FADifficultly.value)"> with difficulty <br>
+  </div>
+
+  <div>
+    <label for="fallAsleep">my sleep was disturbed by:</label> <br>
+    <input type="checkbox" ngControl="noise"> noise <br>
+    <input type="checkbox" ngControl="light"> light <br>
+    <input type="checkbox" ngControl="allergies"> allergies <br>
+    <input type="checkbox" ngControl="stress"> stress <br>
+    <input type="checkbox" ngControl="discomfort"> discomfort <br>
+  </div>
+
+  <div>
+    <label for="wokeUp">when I woke up for the day I felt:</label> <br>
+    <input type="radio" name="wokeUp" value="refreshed" #WURefreshed (click)="wokeUp(WURefreshed.value)"> refreshed <br>
+    <input type="radio" name="wokeUp" value="moderately" #WUModerately (click)="wokeUp(WUModerately.value)"> somewhat refreshed <br>
+    <input type="radio" name="wokeUp" value="fatigued" #WUFatigued (click)="wokeUp(WUFatigued.value)"> fatigued <br>
+  </div>
+
+  <div>
+    <label for="notes">other notes:</label> <br>
+    <input type="textarea" ngControl="notes">
+  </div>
+
+  <button type="submit">Save</button>
+</form>
