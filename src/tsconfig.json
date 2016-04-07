@@ -18,6 +18,9 @@
 
   "files": [
     "app.ts",
-    "typings.d.ts"
+    "typings.d.ts",
+    "app/entry/entry-root.component.ts",
+    "app/sleepdiary.spec.ts",
+    "app/entry/entry-list.component.spec.ts"
   ]
 }
