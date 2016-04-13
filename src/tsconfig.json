@@ -15,12 +15,25 @@
     "sourceRoot": "/",
     "target": "es5"
   },
-
+  "filesGlob": [
+    "../src/**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
   "files": [
-    "app.ts",
-    "typings.d.ts",
-    "app/entry/entry-root.component.ts",
-    "app/sleepdiary.spec.ts",
-    "app/entry/entry-list.component.spec.ts"
+    "../src/app.ts",
+    "../src/app/entry/entry-detail.component.spec.ts",
+    "../src/app/entry/entry-detail.component.ts",
+    "../src/app/entry/entry-form.component.ts",
+    "../src/app/entry/entry-list.component.spec.ts",
+    "../src/app/entry/entry-list.component.ts",
+    "../src/app/entry/entry-root.component.ts",
+    "../src/app/entry/entry.service.spec.ts",
+    "../src/app/entry/entry.service.ts",
+    "../src/app/shared/data.service.ts",
+    "../src/app/sleepdiary.spec.ts",
+    "../src/app/sleepdiary.ts",
+    "../src/typings.d.ts"
   ]
 }
