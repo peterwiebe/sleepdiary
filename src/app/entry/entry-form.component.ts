@@ -12,20 +12,24 @@ export class EntryFormComponent {
   wakeability: string;
 
   onSubmit(form: any) {
-    console.log('you submitted value: ', form);
+    console.log('***************')
+    console.log(form)
+    // console.log('you submitted value: ', form);
     form.sleepability = this.sleepability;
     form.wakeability = this.wakeability;
     this.newEntry = new Entry(form);
-    console.log("form", form);
-    console.log(this.newEntry);
+    // console.log("form", form);
+    // console.log(this.newEntry);
   }
 
   fallAsleep(data: any) {
+    console.log("fallAsleep triggered")
     console.log("data", data);
     this.sleepability = data;
   }
 
   wokeUp(data: any) {
+    console.log("wokeUp Triggered")
     this.wakeability = data;
   }
 
