@@ -3,6 +3,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
 import {EntryRoot} from './entry/entry-root.component';
 import {EntryListComponent} from './entry/entry-list.component';
 import {EntryFormComponent} from './entry/entry-form.component';
+import {DataService} from './shared/data.service';
 
 
 @Component({

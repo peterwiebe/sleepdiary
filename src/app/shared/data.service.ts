@@ -19,6 +19,7 @@ export class DataService{
     const body = JSON.stringify(data);
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
+
     // return this._http.post('https://sleepdiary.firebaseio.com/users/data.json' + token, body, {headers: headers})
     return this._http.post('https://sleepdiary.firebaseio.com/users/data.json', body, {headers: headers})
       .map(response => response.json());
