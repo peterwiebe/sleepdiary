@@ -4,7 +4,7 @@ import {AuthService} from "../shared/auth.service";
 
 @Component({
     template: `
-        <h3>Please sign up to use all features</h3>
+        <h3>Sign In</h3>
         <form [ngFormModel]="myForm" (ngSubmit)="onSignin()">
             <div class="input-group">
                 <label for="email">E-Mail</label>
