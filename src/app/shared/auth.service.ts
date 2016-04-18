@@ -5,7 +5,7 @@ declare var Firebase: any;
 @Injectable()
 export class AuthService {
   signupUser(user: User) {
-    const firebaseRef = new Firebase('https://sleepdiary.firebaseio.com/users/data.json');
+    const firebaseRef = new Firebase('https://sleepdiary.firebaseio.com');
     firebaseRef.createUser({
         email: user.email,
         password: user.password
@@ -19,7 +19,7 @@ export class AuthService {
   }
 
   signinUser(user: User) {
-    const firebaseRef = new Firebase('https://sleepdiary.firebaseio.com/users/data.json');
+    const firebaseRef = new Firebase('https://sleepdiary.firebaseio.com');
     firebaseRef.authWithPassword({
         email: user.email,
         password: user.password
