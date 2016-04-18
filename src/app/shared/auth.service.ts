@@ -1,9 +1,11 @@
-import {Injectable} from "angular2/core";
+import {Injectable, EventEmitter} from "angular2/core";
 import {User} from "./user.interface";
 declare var Firebase: any;
 
 @Injectable()
 export class AuthService {
+  private _userLoggedOut = new EventEmitter<any>();
+
   signupUser(user: User) {
     const firebaseRef = new Firebase('https://sleepdiary.firebaseio.com');
     firebaseRef.createUser({
@@ -23,20 +25,26 @@ export class AuthService {
     firebaseRef.authWithPassword({
         email: user.email,
         password: user.password
-    }, function(error, authData) {
+    }, function(error, authData)        {
       if (error) {
           console.error(error);
       } else {
+          localStorage.setItem('token', authData.token);
           console.log(authData)
       }
     });
   }
 
   logout() {
+    localStorage.removeItem('token');
+    this._userLoggedOut.emit(null);
+  }
 
+  getLoggedOutEvent(): EventEmitter<any> {
+    return this._userLoggedOut
   }
 
   isAuthenticated(): boolean {
-    return false;
+    return localStorage.getItem('token') !== null;
   }
 }

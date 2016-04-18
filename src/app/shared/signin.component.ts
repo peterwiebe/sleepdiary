@@ -1,6 +1,6 @@
 import {Component, OnInit} from "angular2/core";
 import {FormBuilder, ControlGroup, Validators} from "angular2/common";
-import {AuthService} from "../shared/auth.service";
+import {AuthService} from "./auth.service";
 
 @Component({
     template: `

@@ -33,6 +33,7 @@
     "../src/app/entry/entry.service.ts",
     "../src/app/shared/auth.service.ts",
     "../src/app/shared/data.service.ts",
+    "../src/app/shared/header.component.ts",
     "../src/app/shared/signin.component.ts",
     "../src/app/shared/signup.component.ts",
     "../src/app/shared/user.interface.ts",
