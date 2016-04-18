@@ -23,7 +23,6 @@
   },
   "files": [
     "../src/app.ts",
-    "../src/app/entry/entry-data.component.ts",
     "../src/app/entry/entry-detail.component.spec.ts",
     "../src/app/entry/entry-detail.component.ts",
     "../src/app/entry/entry-form.component.ts",
@@ -32,6 +31,7 @@
     "../src/app/entry/entry-root.component.ts",
     "../src/app/entry/entry.service.spec.ts",
     "../src/app/entry/entry.service.ts",
+    "../src/app/entry/stored-data.component.ts",
     "../src/app/shared/auth.service.ts",
     "../src/app/shared/data.service.ts",
     "../src/app/shared/header.component.ts",
