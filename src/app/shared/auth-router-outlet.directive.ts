@@ -7,7 +7,8 @@ import {AuthService} from "./auth.service";
 })
 export class AuthRouterOutlet extends RouterOutlet {
     private _protectedRoutes = {
-        'protected': true,
+        'entry/new': true,
+        'getdata': true
     };
 
     constructor(_elementRef:ElementRef, _loader:DynamicComponentLoader, private _parRouter:Router, @Attribute('name') _nameAttr:string,
