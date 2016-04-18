@@ -9,13 +9,14 @@ import {SigninComponent} from "./shared/signin.component";
 import {HeaderComponent} from './shared/header.component';
 import {AuthService} from './shared/auth.service';
 import {StoredDataComponent} from './entry/stored-data.component';
+import {AuthRouterOutlet} from './shared/auth-router-outlet.directive';
 
 @Component({
   selector: 'sleepdiary-app',
   providers: [ROUTER_PROVIDERS],
   templateUrl: 'app/sleepdiary.html',
   styleUrls: ['app/sd-main.css'],
-  directives: [HeaderComponent, ROUTER_DIRECTIVES],
+  directives: [HeaderComponent, AuthRouterOutlet],
   pipes: []
 })
 @RouteConfig([
