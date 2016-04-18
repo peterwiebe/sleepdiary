@@ -8,6 +8,7 @@ import {SignupComponent} from "./shared/signup.component";
 import {SigninComponent} from "./shared/signin.component";
 import {HeaderComponent} from './shared/header.component';
 import {AuthService} from './shared/auth.service';
+import {StoredDataComponent} from './entry/stored-data.component';
 
 @Component({
   selector: 'sleepdiary-app',
@@ -22,6 +23,8 @@ import {AuthService} from './shared/auth.service';
  { path: '/entry/new', name: 'EntryForm', component: EntryFormComponent },
  { path: '/signup', name: 'Signup', component: SignupComponent, useAsDefault: true },
  { path: '/signin', name: 'Signin', component: SigninComponent },
+ { path: '/getdata', name: 'GetData', component: StoredDataComponent },
+
 
 ])
 export class SleepdiaryApp implements OnInit{

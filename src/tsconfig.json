@@ -23,6 +23,7 @@
   },
   "files": [
     "../src/app.ts",
+    "../src/app/entry/entry-data.component.ts",
     "../src/app/entry/entry-detail.component.spec.ts",
     "../src/app/entry/entry-detail.component.ts",
     "../src/app/entry/entry-form.component.ts",

@@ -11,6 +11,8 @@ import {AuthService} from "./auth.service";
                     <li><a [routerLink]="['Signup']">Sign Up</a></li>
                     <li><a [routerLink]="['Signin']">Sign In</a></li>
                     <li><a [routerLink]="['EntryForm']">New Entry</a></li>
+                    <li><a [routerLink]="['GetData']">GetData</a></li>
+
                 </ul>
             </nav>
             <nav class="right" *ngIf="isAuth()">
