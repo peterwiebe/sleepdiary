@@ -18,6 +18,24 @@
 
   "files": [
     "app.ts",
+    "app/entry/entry-detail.component.spec.ts",
+    "app/entry/entry-detail.component.ts",
+    "app/entry/entry-form.component.ts",
+    "app/entry/entry-list.component.spec.ts",
+    "app/entry/entry-list.component.ts",
+    "app/entry/entry-root.component.ts",
+    "app/entry/entry.service.spec.ts",
+    "app/entry/entry.service.ts",
+    "app/entry/stored-data.component.ts",
+    "app/shared/auth-router-outlet.directive.ts",
+    "app/shared/auth.service.ts",
+    "app/shared/data.service.ts",
+    "app/shared/header.component.ts",
+    "app/shared/signin.component.ts",
+    "app/shared/signup.component.ts",
+    "app/shared/user.interface.ts",
+    "app/sleepdiary.spec.ts",
+    "app/sleepdiary.ts",
     "typings.d.ts"
   ]
 }
